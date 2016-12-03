@@ -2,16 +2,12 @@
 
 Before do
   # Do something before each scenario.
-  #clean_slate()
 end
 
 Before do |scenario|
   # The +scenario+ argument is optional, but if you use it, you can get the title,
   # description, or name (title + description) of the scenario that is about to be
   # executed.
-  #if scenario.name != "I want see the main page"
-  #  clean_slate()
-  #end
 end
 
 After do |scenario|
@@ -20,10 +16,10 @@ After do |scenario|
   # if you use it, you can inspect status with
   # the #failed?, #passed? and #exception methods.
 
-  #if(scenario.failed?)
-  #  #Do something if scenario fails.
-  #  take_screenshot(scenario.name)
-  #end
+  if(scenario.failed?)
+    #Do something if scenario fails.
+    take_screenshot(scenario.name)
+  end
 end
 
 #Tagged hooks
@@ -31,7 +27,6 @@ end
 Before('@clanSlate') do
   # This will only run before scenarios tagged
   # with @Ex_tag1 OR @Ex_tag2.
-  #clean_slate()
 end
 
 AfterStep('@Ex_tag1, @Ex_tag2') do |scenario|
