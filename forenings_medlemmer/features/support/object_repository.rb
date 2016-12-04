@@ -1,1 +1,1 @@
-$address = "loacalhost:8000"
+$address = "localhost:8000"
