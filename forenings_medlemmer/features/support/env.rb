@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'selenium-cucumber'
 require 'clipboard'
+require_relative 'object_repository'
 
 # Store command line arguments
 $browser_type = ENV['BROWSER'] || 'ff'
