@@ -3,6 +3,6 @@ Feature: Add a new user
 
 Scenario: I want to register a child
 	Given I am on the signup page
-	When I fillout the form
+	When I fillout the new user form
 	And I submit the form
-	Then I should see something
+	Then I should see a message telling me that an email has been sent
