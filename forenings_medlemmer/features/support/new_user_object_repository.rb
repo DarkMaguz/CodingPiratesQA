@@ -1,7 +1,14 @@
 $new_user_url = "http://#{$address}/"
 
-# 000_connection_test
-$new_user_header_xpath = "/html/body/div[1]/div[1]/div[1]/h1"
+$new_user_gender = "Dreng"
+$new_user_child_name = "Oskar"
+$new_user_child_birthday = "01-04-2004"
+$new_user_child_email = "oskar7@sfkshkfs.com"
+$new_user_child_phone = "12345678"
+$new_user_parent_name = "Ole"
+$new_user_parent_email = "ole7@sfkshkfs.com"
+$new_user_parent_phone = "32165487"
+$new_user_address = "Øster Voldgade 4A, 1350 København K"
 
 # TC001
 $new_user_gender_select_id = "id_child_gender"
