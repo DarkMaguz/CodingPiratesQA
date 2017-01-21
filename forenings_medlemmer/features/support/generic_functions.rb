@@ -33,3 +33,11 @@ def take_screenshot(scenario="")
   $driver.save_screenshot(image_path)
   puts "Saved a screenshot at \"#{image_path}\"."
 end
+
+def clean_db
+	#File.rm("")
+end
+
+def create_superuser
+	#system("echo \"from django.contrib.auth.models import User; User.objects.create_superuser($admin_name, $admin_password, $admin_email)\" | python manage.py shell")
+end
