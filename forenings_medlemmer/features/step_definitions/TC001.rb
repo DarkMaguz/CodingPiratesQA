@@ -16,7 +16,7 @@ When(/^I fillout the new user form$/) do
   enter_text(:id, $new_user_parent_phone, $new_user_parent_phone_id)
   enter_text(:id, $new_user_address, $new_user_search_address_id)
   wait(1)
-  click(:id,"ui-id-2")
+  click(:id, $new_user_address_search_result_id)
   wait(1)
 end
 
