@@ -11,6 +11,7 @@ When(/^I fillout the volunteer form$/) do
   click(:id, $new_volunteer_email_id)
   enter_text(:id, $new_volunteer_email, $new_volunteer_email_id)
   enter_text(:id, $new_volunteer_phone, $new_volunteer_phone_id)
+  select_option_from_dropdown(:id, :text, $new_volunteer_department, $new_volunteer_department_select_id)
   enter_text(:id, $new_volunteer_address, $new_volunteer_search_address_id)
   wait(1)
   click(:id, $new_volunteer_address_search_result_id)
