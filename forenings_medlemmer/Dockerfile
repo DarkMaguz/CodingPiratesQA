@@ -6,6 +6,7 @@ RUN apt-get -y update && apt-get -y install ruby-dev gem-dev gem ruby xvfb firef
 
 # Update gem base and install prerequisite gems.
 RUN gem update --system
+RUN gem install appium_lib -v 8.2.1 --no-rdoc --no-ri
 RUN gem install selenium-webdriver ci_reporter cucumber selenium rspec addressable win32-service selenium-cucumber clipboard syntax --no-rdoc --no-ri
 
 # Setting up xvfb as a daemon.
