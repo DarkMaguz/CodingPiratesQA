@@ -1,4 +1,4 @@
-$address = "localhost:8000"
+$address = (ENV["FMSERVER"] || "localhost")+":8000"
 
 $admin_name = "God"
 $admin_password = "kkk"
